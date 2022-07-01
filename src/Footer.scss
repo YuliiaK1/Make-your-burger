@@ -1,0 +1,38 @@
+.footer {
+    max-height: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #949BA6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+      p {
+        margin-right: 8px;
+      }
+      a {
+        text-decoration: none;
+      }
+      span {
+        margin: 0 4px 0 4px;
+      }
+  }
+  
+  .right-footer {
+    ul {
+      display: flex;
+      list-style: none;
+      li {
+        margin-left: 8px;
+      }
+    }
+  }
