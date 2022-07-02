@@ -10,13 +10,13 @@ function Footer() {
         </div>
         <div className="right-footer">
             <ul>
-                <li><img src=".\image\payment-logos-1.png" alt="visa" /></li>
-                <li><img src=".\image\payment-logos-2.png" alt="master card" /></li>
-                <li><img src=".\image\payment-logos-3.png" alt="google pay" /></li>
-                <li><img src=".\image\payment-logos-4.png" alt="apple pay" /></li>
-                <li><img src=".\image\payment-logos-5.png" alt="payPas" /></li>
-                <li><img src=".\image\payment-logos.png" alt="bitcoin" /></li>
-                <li><img src=".\image\Etherium.png" alt="processor" /></li>
+                <li><img src="./image/payment-logos-1.png" alt="visa" /></li>
+                <li><img src="./image/payment-logos-2.png" alt="master card" /></li>
+                <li><img src="./image/payment-logos-3.png" alt="google pay" /></li>
+                <li><img src="./image/payment-logos-4.png" alt="apple pay" /></li>
+                <li><img src="./image/payment-logos-5.png" alt="payPas" /></li>
+                <li><img src="./image/payment-logos.png" alt="bitcoin" /></li>
+                <li><img src="./image/Etherium.png" alt="processor" /></li>
             </ul>
         </div>
       </div>
