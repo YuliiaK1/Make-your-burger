@@ -1,12 +1,12 @@
 import './Header.scss';
-function Header() {
+function Header(props) {
     return (
         <header className="header">
           <div className="header-left">
           <img width={57} height={57} src="./image/header-logo.png" alt="header-logo" />
            <ul>
-            <li className="active">Discover</li>
-            <li>Make your burger</li>
+            <li className="active" onClick={props.onClickDiscover} style={{cursor: "pointer"}}>Discover</li>
+            <li onClick={props.onClickMake} style={{cursor: "pointer"}}>Make your burger</li>
            </ul>
           </div>
           <div className="header-right">
