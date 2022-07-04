@@ -1,0 +1,72 @@
+.summ {
+    width: 270px;
+    h2 {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 38px;
+    }
+  
+    hr {
+      border: 1px solid;
+      border-color: #F5F5FF;
+    }
+    p {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #1F2939;
+      margin: 16px 0 20px 0;
+        span {
+          color: red;
+        }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 22.5px 0 17.5px 0;
+        p {
+          font-family: 'Open Sans';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 28px;
+          color: #5243C2;
+        }
+  
+        button {
+          width: 120px;
+          height: 42px;
+          border: none;
+          border-radius: 99px;
+          background-color: #5243C2;
+          color: #F5F5FF;
+          font-size: 16px;
+        }
+    }
+    .time {
+      background-color: #F5F5FF;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 12px 12px;
+      border-radius: 32px;
+        div {
+          display: flex;
+          span {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #1F2939;
+            margin-left: 4px;
+          }
+        }
+    }
+  }

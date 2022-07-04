@@ -1,4 +1,4 @@
-.screen-one {
+.screen-two {
     flex: 1.7 1 0%;
     display: flex;
     -webkit-box-pack: center;
@@ -31,16 +31,10 @@
         bottom: 40px;
       }
       }
-        .buntwo {
-        img {
-        position: absolute;
-        bottom: 60px;
-      }
-      }
-      .salad2 {
-        position: absolute;
-        bottom: -65px;
-        z-index: 10;
-      }
     }
+  }
+
+
+  .constructor {
+    display: flex;
   }
