@@ -1,12 +1,13 @@
 import './Header.scss';
-function Header(props) {
+import { NavLink } from 'react-router-dom';
+function Header() {
     return (
         <header className="header">
           <div className="header-left">
           <img width={57} height={57} src="./image/header-logo.png" alt="header-logo" />
            <ul>
-            <li className="active" onClick={props.onClickDiscover} style={{cursor: "pointer"}}>Discover</li>
-            <li onClick={props.onClickMake} style={{cursor: "pointer"}}>Make your burger</li>
+            <NavLink to="/home" style={{ textDecoration: 'none' }}><li >Discover</li></NavLink>
+            <NavLink to="/constructor" style={{ textDecoration: 'none' }}><li>Make your burger</li></NavLink>
            </ul>
           </div>
           <div className="header-right">

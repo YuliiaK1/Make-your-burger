@@ -25,7 +25,7 @@ function Ingredients(props) {
             <div className="counter">
               <button disabled={!count} onClick={minus}>-</button>
               <p>{count}</p>
-              <button onClick={plus}>+</button>
+              <button disabled={count>=3} onClick={plus}>+</button>
             </div>
       </div>
       </div>

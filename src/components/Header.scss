@@ -27,20 +27,20 @@ header {
       margin-right: 100px;
     }
     ul {
+      display: flex;
+      align-items: center;
+      gap: 80px;
       li {
-        &:first-child {
-          margin-right: 58px;
-          padding: 10px 0px;
-        }
+        cursor: pointer;
+        color: #1F2939;
+        padding: 10px 0px;
       }
     }
   }
-  
   .active {
     border-bottom: 2px solid rgb(82, 67, 194);
     font-weight: 600;
   }
-  
   .header-right {
     ul {
       li {

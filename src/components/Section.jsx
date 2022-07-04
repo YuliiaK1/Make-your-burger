@@ -1,8 +1,9 @@
 import './Section.scss';
+import { Link } from 'react-router-dom';
 function Section(props) {
     return (
       <div className="section">
-        <button onClick={props.onClickMake} style={{cursor: "pointer"}}>Make Burger</button>
+        <Link to="/constructor"><button >Make Burger</button></Link>
         <img width={520} height={502} src="./image/main-img-burger.png" alt="burger" />
       </div>
   );
