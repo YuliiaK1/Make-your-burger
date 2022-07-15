@@ -6,6 +6,7 @@ function Ingredients(props) {
   
   const plus = () => {
     setCount(count+1);
+    onPlus();
   };
 
   const minus = () => {

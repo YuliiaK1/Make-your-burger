@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Header from './components/Header';
 import Main from './components/Main';
 import ScreenTwo from './components/ScreenTwo';
@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 
 
 function App() {
-  const[openConstructor, setOpenConstructor] = React.useState(false);
   return (
     <div className="wrapper">
       <Header/>
