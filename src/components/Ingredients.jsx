@@ -1,7 +1,7 @@
 import React from 'react';
 import './Ingredients.scss';
 
-function Ingredients(props) {
+function Ingredients({image, name, onPlus}) {
   const [count, setCount] = React.useState(0);
   
   const plus = () => {
@@ -18,10 +18,10 @@ function Ingredients(props) {
       <div className="ingredients">
         <div className="ingr-card">
             <div className="image-ingr">
-              <img src={props.image} alt="cotlet" /> 
+              <img src={image} alt="cotlet" /> 
             </div>
             <div className="name-ingr">
-              <p>{props.name}</p>
+              <p>{name}</p>
             </div>
             <div className="counter">
               <button disabled={!count} onClick={minus}>-</button>

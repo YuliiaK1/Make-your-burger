@@ -11,7 +11,7 @@ function App() {
     <div className="wrapper">
       <Header/>
         <Routes>
-          <Route path="/home" element={<Main/>}/>
+          <Route path="/" element={<Main/>}/>
           <Route path="/constructor" element={<ScreenTwo/>}/>
           <Route path="*" element={<h3>404</h3>} />
         </Routes>
