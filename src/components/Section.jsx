@@ -1,6 +1,6 @@
 import './Section.scss';
 import { Link } from 'react-router-dom';
-function Section(props) {
+function Section() {
     return (
       <div className="section">
         <Link to="/constructor"><button >Make Burger</button></Link>

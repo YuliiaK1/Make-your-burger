@@ -1,65 +1,9 @@
-export const ingredientsInfo = [
-    {
-        name: 'cutlet',
-        image: cutlet,
-        price: 7.80,
-        gram: 350,
-        kcal: 280,
-    },
-    {
-        name: 'mayo',
-        image: mayo,
-        price: 2.00,
-        gram: 30,
-        kcal: 40,
-    },
-    {
-        name: 'onion',
-        image: onion,
-        price: 1.50,
-        gram: 12,
-        kcal: 4,
-    },
-    {
-        name: 'tomato',
-        image: tomato,
-        price: 4.20,
-        gram: 48,
-        kcal: 4,
-    },
-    {
-        name: 'cucumber',
-        image: cucumber,
-        price: 3.50,
-        gram: 7,
-        kcal: 2,
-    },
-    {
-        name: 'cheese',
-        image: cheese,
-        price: 5.10,
-        gram: 40,
-        kcal: 40,
-    },
-    {
-        name: 'salad',
-        image: salad,
-        price: 3.20,
-        gram: 6,
-        kcal: 3,
-    },
-    {
-        name: 'bun',
-        image: bun,
-        price: 1.00,
-        gram: 10,
-        kcal: 120,
-    },
-    {
-        name: 'bunTop',
-        image: bunTop,
-        price: 1.00,
-        gram: 10,
-        kcal: 120,
-    },
-];
+export const ingredients = [
+    {name: 'Cutlet', image: './image/cutlet.png', imageHuge: './image/cutletHuge.png', gram: 350, price: 7.80, kcal: 280},
+    {name: 'Mayo',   image: './image/mayo.png', imageHuge: './image/mayoHuge.png', gram: 30, price: 2.00, kcal: 40},
+    {name: 'Onion',  image: './image/onion.png', imageHuge: './image/onionHuge.png', gram: 12, price: 1.50, kcal: 4},
+    {name: 'Tomato', image: './image/tomato.png', imageHuge: './image/tomatoHuge.png', gram: 48, price: 4.20, kcal: 4},
+    {name: 'Cucumber', image: './image/cucumber.png', imageHuge: './image/cucumberHuge.png', gram: 7, price: 3.50, kcal: 2},
+    {name: 'Cheese', image: './image/cheese.png', imageHuge: './image/cheeseHuge.png', gram: 40, price: 5.10, kcal: 40},
+    {name: 'Salad',  image: './image/salad.png', imageHuge: './image/saladHuge.png', gram: 6, price: 3.20, kcal: 3}
+  ];

@@ -5,9 +5,13 @@ import Main from './components/Main';
 import ScreenTwo from './components/ScreenTwo';
 import Footer from './components/Footer';
 
+export const AppContext = React.createContext({});  
 
 function App() {
+  const [summItems, setSumm] = React.useState([]);
+  const [burgerItems, setBurger] = React.useState([]);
   return (
+    <AppContext.Provider value={{summItems, burgerItems}}>
     <div className="wrapper">
       <Header/>
         <Routes>
@@ -17,6 +21,7 @@ function App() {
         </Routes>
       <Footer />
     </div>
+    </AppContext.Provider>
   );
 }
 
