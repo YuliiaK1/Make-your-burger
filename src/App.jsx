@@ -4,14 +4,14 @@ import Header from './components/Header';
 import Main from './components/Main';
 import ScreenTwo from './components/ScreenTwo';
 import Footer from './components/Footer';
-
-export const AppContext = React.createContext({});  
+import Context from './components/Context';
 
 function App() {
-  const [summItems, setSumm] = React.useState([]);
-  const [burgerItems, setBurger] = React.useState([]);
+  const [summItem, setSummItem] = React.useState(0);
+  const [gramItem, setGramItem] = React.useState(20);
+  const [kcalItem, setKcalItem] = React.useState(80);
   return (
-    <AppContext.Provider value={{summItems, burgerItems}}>
+    <Context.Provider value={{summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem}}>
     <div className="wrapper">
       <Header/>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       <Footer />
     </div>
-    </AppContext.Provider>
+    </Context.Provider>
   );
 }
 

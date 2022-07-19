@@ -1,11 +1,12 @@
 import './Burger.scss';
+import { ingredients } from './InfoIngredients';
 
-function Burger({items=[]}) {
+function Burger() {
     return (
       <div>
         <div className="burger">
-          {items.map((obj)=> (
-            <div key={obj.id}><img width={380} height={70} src={items} alt="/" /></div>
+          {ingredients.map((obj, index)=> (
+            <div key={index}><img src={obj.imageHuge} alt="/" /></div>
           ))}
         </div>
       </div>

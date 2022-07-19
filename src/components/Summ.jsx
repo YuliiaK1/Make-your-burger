@@ -1,14 +1,18 @@
+import React, {useContext} from 'react';
+import Context from './Context';
 import './Summ.scss'
-function Summ(props) {
+
+function Summ() {
+  const value = useContext(Context);
     return (
       <div className="summ">
         <h2>Summary</h2>
         <hr />
         <div className="price">
-          <p>${props.price}</p>
+          <p>${+value.summItem.toFixed(2) || 0}</p>
           <button>Checkout</button>
         </div>
-        <p>Build a <span>$10</span> Burger and Get a Gift</p>
+        <p>Build a <span>$20</span> Burger and Get a Gift</p>
         <div className="time">
           <div>
             <img src="./image/Summary icons.svg" alt="" />
@@ -16,11 +20,11 @@ function Summ(props) {
           </div>
           <div>
             <img src="./image/Summary icons2.svg" alt="" />
-            <span>20 oz</span>
+            <span>{value.gramItem}gr</span>
           </div>
           <div>
             <img src="./image/Summary icons3.svg" alt="" />
-            <span>80 kcal</span>
+            <span>{value.kcalItem}kcal</span>
           </div>
         </div>
       </div>
