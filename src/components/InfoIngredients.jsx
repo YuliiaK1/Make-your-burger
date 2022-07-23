@@ -1,5 +1,5 @@
 export const ingredients = [
-    {name: 'Cutlet', image: './image/cutlet.png', imageHuge: './image/cutletHuge.png', gram: 350, price: 7.85, kcal: 280},
+    {name: 'Cutlet', image: './image/cutlet.png', imageHuge: './image/cutletHuge.png', gram: 350, price: 5.85, kcal: 280},
     {name: 'Mayo',   image: './image/mayo.png', imageHuge: './image/mayoHuge.png', gram: 30, price: 2.15, kcal: 40},
     {name: 'Onion',  image: './image/onion.png', imageHuge: './image/onionHuge.png', gram: 12, price: 1.55, kcal: 4},
     {name: 'Tomato', image: './image/tomato.png', imageHuge: './image/tomatoHuge.png', gram: 48, price: 4.25, kcal: 4},

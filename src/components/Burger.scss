@@ -1,12 +1,23 @@
 .burger {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 250px;
+    bottom: 250px;
+    gap: 25px;
+    height: 0px;
+    .bunTop {
+        z-index: 2;
+        margin-bottom: 10px;
+    }
     img {
-        width: 320px;
+        width: 450px;
+        height: 130px;
         transform: none;
         transform-origin: 50% 50% 0px;
+        position: absolute;
+        transform: scale(0.6);  //?????
     }
 }

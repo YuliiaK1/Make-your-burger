@@ -4,38 +4,43 @@ import './Ingredients.scss';
 //const addSumm = (obj) => { let arr = obj;console.log(arr);let result = Array.from(arr).reduce((sum, obj)=>obj.price + sum, 0);console.log(result);}
 
 function Ingredients({image, name, onPlus}) {
-  const value = useContext(Context);
-  let y = [];
-  y.push(onPlus);
+  const {summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem, burgerItem, setBurgerItem } = useContext(Context);
+  let arrayOnPlus = [];
+  arrayOnPlus.push(onPlus);
+
+  const view = (onPlus) => {
+    let burgerImage = onPlus.imageHuge;
+    setBurgerItem(burgerImage);
+  }
   
   const plusResult = (onPlus) => {
-    let sumItems = y.map(item => item.price).reduce((a, b) => a + b);
-    value.setSummItem(value.summItem+sumItems);
+    let sumItems = arrayOnPlus.map(item => item.price).reduce((a, b) => a + b);
+    setSummItem(summItem+sumItems);
   };
 
   const minusResult = (onPlus) => {
-    let sumItems = y.map(item => item.price).reduce((a, b) => a - b);
-    value.setSummItem(value.summItem-sumItems);
+    let sumItems = arrayOnPlus.map(item => item.price).reduce((a, b) => a - b);
+    setSummItem(summItem-sumItems);
   };
 
   const gramPlusResult = (onPlus) => {
-    let gramItems = y.map(item => item.gram).reduce((a, b) => a + b);
-    value.setGramItem(value.gramItem+gramItems);
+    let gramItems = arrayOnPlus.map(item => item.gram).reduce((a, b) => a + b);
+    setGramItem(gramItem+gramItems);
   };
 
   const gramMinusResult = (onPlus) => {
-    let gramItems = y.map(item => item.gram).reduce((a, b) => a - b);
-    value.setGramItem(value.gramItem-gramItems);
+    let gramItems = arrayOnPlus.map(item => item.gram).reduce((a, b) => a - b);
+    setGramItem(gramItem-gramItems);
   };
 
   const kcalPlusResult = (onPlus) => {
-    let kcalItems = y.map(item => item.kcal).reduce((a, b) => a + b);
-    value.setKcalItem(value.kcalItem+kcalItems);
+    let kcalItems = arrayOnPlus.map(item => item.kcal).reduce((a, b) => a + b);
+    setKcalItem(kcalItem+kcalItems);
   };
 
   const kcalMinusResult = (onPlus) => {
-    let kcalItems = y.map(item => item.kcal).reduce((a, b) => a - b);
-    value.setKcalItem(value.kcalItem-kcalItems);
+    let kcalItems = arrayOnPlus.map(item => item.kcal).reduce((a, b) => a - b);
+    setKcalItem(kcalItem-kcalItems);
   };
 
   const [count, setCount] = React.useState(0);
@@ -44,6 +49,7 @@ function Ingredients({image, name, onPlus}) {
     plusResult(onPlus);
     gramPlusResult(onPlus);
     kcalPlusResult(onPlus);
+    view(onPlus);
   };
   const minus = () => {
     setCount(count-1);

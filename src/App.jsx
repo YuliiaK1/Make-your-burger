@@ -10,8 +10,9 @@ function App() {
   const [summItem, setSummItem] = React.useState(0);
   const [gramItem, setGramItem] = React.useState(20);
   const [kcalItem, setKcalItem] = React.useState(80);
+  const [burgerItem, setBurgerItem] = React.useState([]);
   return (
-    <Context.Provider value={{summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem}}>
+    <Context.Provider value={{summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem, burgerItem, setBurgerItem}}>
     <div className="wrapper">
       <Header/>
         <Routes>
