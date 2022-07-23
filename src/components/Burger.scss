@@ -14,10 +14,18 @@
     }
     img {
         width: 450px;
-        height: 130px;
-        transform: none;
-        transform-origin: 50% 50% 0px;
+        height: 170px;
         position: absolute;
         transform: scale(0.6);  //?????
+    }
+    .mainBurger {
+        z-index: 1;
+    }
+    .bun {
+        img {
+            width: 540px;
+            height: 175px;
+            left: -45px;
+        }
     }
 }

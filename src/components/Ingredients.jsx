@@ -4,12 +4,13 @@ import './Ingredients.scss';
 //const addSumm = (obj) => { let arr = obj;console.log(arr);let result = Array.from(arr).reduce((sum, obj)=>obj.price + sum, 0);console.log(result);}
 
 function Ingredients({image, name, onPlus}) {
-  const {summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem, burgerItem, setBurgerItem } = useContext(Context);
+  const {summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem, burgerItem = [], setBurgerItem } = useContext(Context);
   let arrayOnPlus = [];
   arrayOnPlus.push(onPlus);
 
   const view = (onPlus) => {
-    let burgerImage = onPlus.imageHuge;
+    let burgerImage = []
+    burgerImage.push(onPlus.imageHuge);
     setBurgerItem(burgerImage);
   }
   
