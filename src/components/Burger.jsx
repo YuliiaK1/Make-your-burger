@@ -5,7 +5,6 @@ import Context from './Context';
 
 function Burger() {
   const { burgerItem =[], setBurgerItem } = useContext(Context);
-  console.log(burgerItem);
 
     return (
       <div>
