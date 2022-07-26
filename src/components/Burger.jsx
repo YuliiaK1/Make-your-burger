@@ -9,11 +9,11 @@ function Burger() {
     return (
       <div>
         <div className="burger">
-          <div className='bunTop'><img src='.\image\bun-topHuge.png' alt="/" /></div>
+          <div className='bunTop'><img src='.\image\bun-topHuge.png' alt="bunTop" /></div>
           {burgerItem.map((obj, index)=> (
-            <div className='mainBurger' key={index}><img src={obj} alt="/" /></div>
+            <div className='mainBurger' key={index}><img src={obj} alt="Burger" /></div>
           ))}
-          <div className='bun'><img src='.\image\bunHuge.png' alt="/" /></div>
+          <div className='bun'><img src='.\image\bunHuge.png' alt="bunBottom" /></div>
         </div>
       </div>
   );
