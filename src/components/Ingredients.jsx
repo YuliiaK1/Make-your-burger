@@ -9,9 +9,10 @@ function Ingredients({image, name, onPlus}) {
   arrayOnPlus.push(onPlus);
 
   const view = (onPlus) => {
-    let burgerImage = []
-    burgerImage.push(onPlus.imageHuge);
-    setBurgerItem(burgerImage);
+    setBurgerItem([...burgerItem, onPlus.imageHuge]);
+  }
+  const closeView = (onPlus) => {
+    setBurgerItem((prev)=>prev.filter(item => item === item.imageHuge));
   }
   
   const plusResult = (onPlus) => {
@@ -57,6 +58,7 @@ function Ingredients({image, name, onPlus}) {
     minusResult(onPlus);
     gramMinusResult(onPlus);
     kcalMinusResult(onPlus);
+    closeView(onPlus); 
   };
 
 

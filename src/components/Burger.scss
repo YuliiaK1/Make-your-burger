@@ -6,11 +6,11 @@
     position: relative;
     right: 250px;
     bottom: 250px;
-    gap: 25px;
+    gap: 20px;
     height: 0px;
     .bunTop {
-        z-index: 2;
-        margin-bottom: 10px;
+        z-index: 22;
+        margin-bottom: 12px;
     }
     img {
         width: 450px;
@@ -18,8 +18,12 @@
         position: absolute;
         transform: scale(0.6);
     }
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .mainBurger {
-        z-index: 1;
+        height: 20px;
     }
     .bun {
         img {
@@ -29,3 +33,4 @@
         }
     }
 }
+
