@@ -3,7 +3,6 @@ import Context from './Context';
 import './Summ.scss'
 
 function Summ(props) {
-  console.log(props);
   const value = useContext(Context);
   let conditional = +value.summItem.toFixed(2);
   
