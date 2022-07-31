@@ -4,7 +4,7 @@ import ShowIngredients from './ShowIngredients';
 import Summ from './Summ';
 import Burger from './Burger';
 
-function ScreenTwo() {
+function ScreenTwo(props) {
     return (
       <div>
         <div className='constructor'>
@@ -12,7 +12,7 @@ function ScreenTwo() {
             <img width={480} height={380} src="./image/bg-burger.png" alt="bc-burger" />
             <Burger/> 
           </div>
-          <Summ/>
+          <Summ openCart={props.onClickCart}/>
         </div>
         <div>
           <ShowIngredients/>

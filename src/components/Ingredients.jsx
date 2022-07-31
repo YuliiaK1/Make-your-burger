@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Context from './Context';
 import './Ingredients.scss';
-//const addSumm = (obj) => { let arr = obj;console.log(arr);let result = Array.from(arr).reduce((sum, obj)=>obj.price + sum, 0);console.log(result);}
 
 function Ingredients({image, name, onPlus}) {
   const {summItem, setSummItem, gramItem, setGramItem, kcalItem, setKcalItem, burgerItem = [], setBurgerItem } = useContext(Context);
@@ -11,8 +10,9 @@ function Ingredients({image, name, onPlus}) {
   const view = (onPlus) => {
     setBurgerItem([...burgerItem, onPlus.imageHuge]);
   }
+  // setBurgerItem((prev)=>prev.filter((item, index) => prev.indexOf(item) != index));
   const closeView = (onPlus) => {
-    setBurgerItem((prev)=>prev.filter(item => item === item.imageHuge));
+    setBurgerItem((prev)=>prev.filter((item) => item != onPlus.imageHuge));
   }
   
   const plusResult = (onPlus) => {

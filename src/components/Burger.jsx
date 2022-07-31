@@ -1,6 +1,5 @@
 import './Burger.scss';
 import React, {useContext} from 'react';
-import { ingredients } from './InfoIngredients';
 import Context from './Context';
 
 function Burger() {
