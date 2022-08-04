@@ -47,8 +47,15 @@ function Ingredients({image, name, onPlus}) {
   };
   
   let burgerSetting = {"Cutlet":0, "Mayo":0, "Onion":0, "Tomato":0, "Cucumber":0, "Cheese":0, "Salad":0};
-  const [count, setCount] = React.useState(burgerSetting[name]);
-
+  const getFromStorage = () => { 
+    const storage = window.localStorage.getItem('burgerSetting[name]');
+    return storage !== null ? parseInt(storage) : 0;
+    };
+    const [count, setCount] = React.useState(getFromStorage);
+    useEffect(
+        () => window.localStorage.setItem('burgerSetting[name]', count),
+        [count]
+    );
 
   const plus = () => {
     setCount(count => count + 1);
