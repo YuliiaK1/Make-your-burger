@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Context from './Context';
 import './Ingredients.scss';
 
@@ -7,59 +7,64 @@ function Ingredients({image, name, onPlus}) {
   let arrayOnPlus = [];
   arrayOnPlus.push(onPlus);
 
+
   const view = (onPlus) => {
     setBurgerItem([...burgerItem, onPlus.imageHuge]);
   }
   // setBurgerItem((prev)=>prev.filter((item, index) => prev.indexOf(item) != index));
   const closeView = (onPlus) => {
-    setBurgerItem((prev)=>prev.filter((item) => item != onPlus.imageHuge));
+    setBurgerItem((prev)=>prev.filter((item) => item !== onPlus.imageHuge));
   }
   
-  const plusResult = (onPlus) => {
+  const plusResult = () => {
     let sumItems = arrayOnPlus.map(item => item.price).reduce((a, b) => a + b);
     setSummItem(summItem+sumItems);
   };
 
-  const minusResult = (onPlus) => {
+  const minusResult = () => {
     let sumItems = arrayOnPlus.map(item => item.price).reduce((a, b) => a - b);
     setSummItem(summItem-sumItems);
   };
 
-  const gramPlusResult = (onPlus) => {
+  const gramPlusResult = () => {
     let gramItems = arrayOnPlus.map(item => item.gram).reduce((a, b) => a + b);
     setGramItem(gramItem+gramItems);
   };
 
-  const gramMinusResult = (onPlus) => {
+  const gramMinusResult = () => {
     let gramItems = arrayOnPlus.map(item => item.gram).reduce((a, b) => a - b);
     setGramItem(gramItem-gramItems);
   };
 
-  const kcalPlusResult = (onPlus) => {
+  const kcalPlusResult = () => {
     let kcalItems = arrayOnPlus.map(item => item.kcal).reduce((a, b) => a + b);
     setKcalItem(kcalItem+kcalItems);
   };
 
-  const kcalMinusResult = (onPlus) => {
+  const kcalMinusResult = () => {
     let kcalItems = arrayOnPlus.map(item => item.kcal).reduce((a, b) => a - b);
     setKcalItem(kcalItem-kcalItems);
   };
+  
+  let burgerSetting = {"Cutlet":0, "Mayo":0, "Onion":0, "Tomato":0, "Cucumber":0, "Cheese":0, "Salad":0};
+  const [count, setCount] = React.useState(burgerSetting[name]);
 
-  const [count, setCount] = React.useState(0);
+
   const plus = () => {
-    setCount(count+1);
+    setCount(count => count + 1);
     plusResult(onPlus);
     gramPlusResult(onPlus);
     kcalPlusResult(onPlus);
     view(onPlus);
   };
   const minus = () => {
-    setCount(count-1);
+    setCount(count => count - 1);
     minusResult(onPlus);
     gramMinusResult(onPlus);
     kcalMinusResult(onPlus);
     closeView(onPlus); 
   };
+
 
 
     return (
