@@ -10,5 +10,9 @@
       color: #1F2939;
       margin: 0;
       margin-top: 100px;
+      @media (max-width: 768px){
+        font-size: 44px;
+      line-height: 40px;
+      }
     }
   }

@@ -7,6 +7,9 @@ header {
       font-style: normal;
       font-size: 16px;
       color: #1F2939;
+      @media (max-width: 768px){
+        font-size: 14px;
+      }
     }
   
   .header-left, .header-right {
@@ -24,16 +27,22 @@ header {
   
   .header-left {
     img {
-      margin-right: 100px;
+      margin-right: 25px;
     }
     ul {
       display: flex;
       align-items: center;
       gap: 80px;
+      @media (max-width: 768px){
+        gap: 40px;
+      }
       li {
         cursor: pointer;
         color: #1F2939;
         padding: 10px 0px;
+        @media (max-width: 768px){
+          z-index: 1;
+        }
       }
     }
   }
@@ -51,12 +60,18 @@ header {
           background-color: #FFEDED;
           border-radius: 99px;
           padding: 8px 12px;
+          @media (max-width: 768px){
+            margin-right: 20px;
+          }
           img {
             margin-right: 4px;
           }
         }
         &:last-child {
           margin-left: 60px;
+          @media (max-width: 768px){
+            margin-left: 25px;
+          }
         }
       }
     }

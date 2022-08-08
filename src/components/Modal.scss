@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
     z-index: 23;
+
+    @media (max-width: 1024px) {
+        height: 695px;
+    }
         .modal-item {
             width: 450px;
             height: 230px;

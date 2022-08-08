@@ -1,4 +1,7 @@
 .show-ingredients {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px){
+      margin-top: 10px;
+    }
   }

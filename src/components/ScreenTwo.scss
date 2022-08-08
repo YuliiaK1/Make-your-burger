@@ -4,6 +4,9 @@
   display: flex;
   flex: 1;
   height: auto;
+  @media (max-width: 768px){
+    margin-top: 10px;
+  }
 }
 
 .screen-two {
@@ -15,6 +18,12 @@
     -webkit-box-align: center;
     align-items: center;
     transition-duration: 0.15s;
+     img{
+      @media (max-width: 768px){
+        width: 350px;
+        height: 350px;
+      }
+     }
   }
 
 

@@ -38,3 +38,16 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   max-height: 100%;
 }
+
+@media (max-width: 1024px) { 
+  .wrapper {
+    margin: 0 65px;
+  }
+ }
+
+@media (max-width: 768px){
+  .wrapper {
+    max-width: 768px;
+    margin: 0 40px;
+  }
+}

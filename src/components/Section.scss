@@ -2,6 +2,11 @@
     margin: 0;
     position: relative;
     right: 70px;
+    @media (max-width: 768px){
+      max-height: 100%;
+      right: -20px;
+      bottom: 105px;
+    }
       button {
         background: #5243C2;
         border-radius: 50%;
@@ -21,5 +26,12 @@
         bottom: 157px;
         left: 50px;
         cursor: pointer;
+        @media (max-width: 768px){
+          width: 100px;
+          height: 100px;
+          font-size: 16px;
+          top: 320px;
+          left: -15px;
+        }
       }
   }

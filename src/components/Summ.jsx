@@ -4,7 +4,7 @@ import './Summ.scss'
 
 function Summ(props) {
   const value = useContext(Context);
-  let conditional = +value.summItem.toFixed(2);
+  let summResult = +value.summItem.toFixed(2);
   
   const addSauce = (obj) => {
     if(obj>=20) {
@@ -22,7 +22,7 @@ function Summ(props) {
         <h2>Summary</h2>
         <hr />
         <div className="price">
-          <p>${conditional || 0}</p>
+          <p>${summResult || 0}</p>
           <button onClick={props.openCart}>Checkout</button>
         </div>
         <p>Build a <span>$20</span> Burger and Get a free Sauce </p>
@@ -40,8 +40,8 @@ function Summ(props) {
             <span>{value.kcalItem}kcal</span>
           </div>
         </div>
-        {addSauce(conditional)}
-        {limitBurger(conditional)}
+        {addSauce(summResult)}
+        {limitBurger(summResult)}
       </div>
   );
 }

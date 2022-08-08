@@ -79,6 +79,17 @@
     transform: scale(0.6);
     top: 350px;
     left: 548px;
+    @media (max-width: 1024px) { 
+      transform: scale(0.5);
+      left: 370px;
+     }
+    @media (min-width: 1367px) and (max-width: 1440px) { 
+      left: 600px;
+    }
+    @media (max-width: 768px) { 
+      left: 300px;
+     }
+     right: 320px;
       p {
         font-family: 'Open Sans';
         font-style: normal;
@@ -102,6 +113,16 @@
   position: relative;
   right: 280px;
   bottom: 166px;
+  @media (max-width: 1024px) { 
+    right: 182px;
+   }
+   @media (min-width: 1367px) and (max-width: 1440px){ 
+    right: 320px;
+   }
+   @media (max-width: 768px){
+    right: 85px;
+    bottom: 225px;
+  }
    &::after { 
     content: ' '; 
     position: absolute; 
