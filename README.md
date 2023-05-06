@@ -1,7 +1,4 @@
-<h3>In processing.....</h3>
-.
-.
-.
+Interactive burger builder app using Js/React. The application constructs a burger from the selected elements, calculates the cost, the amount of calories, cooking time.
 
 # Getting Started with Create React App
 
