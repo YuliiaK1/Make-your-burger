@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Make-your-burger/static/css/main.06fabf52.css",
+    "main.js": "/Make-your-burger/static/js/main.33a86be2.js",
+    "static/js/787.c8817252.chunk.js": "/Make-your-burger/static/js/787.c8817252.chunk.js",
+    "index.html": "/Make-your-burger/index.html",
+    "main.06fabf52.css.map": "/Make-your-burger/static/css/main.06fabf52.css.map",
+    "main.33a86be2.js.map": "/Make-your-burger/static/js/main.33a86be2.js.map",
+    "787.c8817252.chunk.js.map": "/Make-your-burger/static/js/787.c8817252.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06fabf52.css",
+    "static/js/main.33a86be2.js"
+  ]
+}
