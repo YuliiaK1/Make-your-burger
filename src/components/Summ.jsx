@@ -1,8 +1,10 @@
 import React, {useContext} from 'react';
 import Context from './Context';
 import './Summ.scss'
+import Price from './Price';
 
 function Summ(props) {
+  const{isMobile} = useContext(Context);
   const value = useContext(Context);
   let summResult = +value.summItem.toFixed(2);
   
@@ -21,11 +23,9 @@ function Summ(props) {
       <div className="summ">
         <h2>Summary</h2>
         <hr />
-        <div className="price">
-          <p>${summResult || 0}</p>
-          <button onClick={props.openCart}>Checkout</button>
-        </div>
-        <p>Build a <span>$20</span> Burger and Get a free Sauce </p>
+        {isMobile ? null : <Price summ = {summResult} open={props.openCart}/>}
+        {isMobile ? null :  <p>Build a <span>$20</span> Burger and Get a free Sauce </p>}
+        
         <div className="time">
           <div>
             <img src="./image/Summary icons.svg" alt="" />
@@ -40,8 +40,10 @@ function Summ(props) {
             <span>{value.kcalItem}kcal</span>
           </div>
         </div>
+
+        {isMobile ? <button className='sauceMobile'>Build a<span>$20</span>Burger and Get a free Sauce</button> : null}
         {addSauce(summResult)}
-        {limitBurger(summResult)}
+        {isMobile ? null : limitBurger(summResult)}
       </div>
   );
 }

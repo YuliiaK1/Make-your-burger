@@ -7,6 +7,15 @@
       font-size: 28px;
       line-height: 38px;
     }
+    @media (max-width: 600px){
+      width: 100%;
+      hr {
+        display: none;
+      }
+      h2 {
+        display: none;
+      }
+    }
   
     hr {
       border: 1px solid;
@@ -20,32 +29,11 @@
       line-height: 20px;
       color: #1F2939;
       margin: 16px 0 20px 0;
+      @media (max-width: 600px){
+        margin-bottom: 20px;
+      }
         span {
           color: red;
-        }
-    }
-    .price {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin: 22.5px 0 17.5px 0;
-        p {
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 800;
-          font-size: 28px;
-          color: #5243C2;
-        }
-  
-        button {
-          width: 120px;
-          height: 42px;
-          border: none;
-          border-radius: 99px;
-          background-color: #5243C2;
-          color: #F5F5FF;
-          font-size: 16px;
-          cursor: pointer;
         }
     }
     .time {
@@ -55,8 +43,18 @@
       justify-content: space-between;
       padding: 12px 12px;
       border-radius: 32px;
+      @media (max-width: 600px){
+        background-color: white;
+        padding: 12px 0;
+      }
         div {
           display: flex;
+          @media (max-width: 845px) and (min-width: 769px){
+            display: block;
+          }
+          @media (max-width: 663px) and (min-width: 600px){
+            display: block;
+          }
           span {
             font-family: 'Open Sans';
             font-style: normal;
@@ -70,6 +68,29 @@
           }
         }
     }
+    .sauceMobile{
+      width: 100%;
+      font-size: 14px;
+      border: none;
+      color: #FF4D4F;
+      background-color: #FFEDED;
+      padding: 10px 0;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      cursor: pointer;
+       span {
+        @media (max-width: 600px){
+          font-size: 12px;
+          color: #F5F5FF;
+          background-color: #FF4D4F;
+          border-radius: 19px;
+          padding: 6px 7px;
+          margin: 0 8px;
+        }
+       }
+    }
   }
 
   .sauce {
@@ -79,6 +100,7 @@
     transform: scale(0.6);
     top: 350px;
     left: 548px;
+    z-index: 3;
     @media (max-width: 1024px) { 
       transform: scale(0.5);
       left: 370px;
@@ -88,8 +110,13 @@
     }
     @media (max-width: 768px) { 
       left: 300px;
+      right: 320px;
      }
-     right: 320px;
+     @media (max-width: 600px) { 
+      transform: scale(0.4);
+      left: 60%;
+      top: 275px;
+     }
       p {
         font-family: 'Open Sans';
         font-style: normal;

@@ -37,6 +37,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   max-height: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 1024px) { 
@@ -49,5 +50,11 @@ body::-webkit-scrollbar-thumb {
   .wrapper {
     max-width: 768px;
     margin: 0 40px;
+  }
+}
+
+@media (max-width: 425px){
+  .wrapper {
+    margin: 0 24px;
   }
 }

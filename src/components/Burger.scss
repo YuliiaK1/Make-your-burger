@@ -8,9 +8,14 @@
     bottom: 250px;
     gap: 20px;
     height: 0px;
+    margin: 20px 0 20px 0;
     @media (max-width: 768px){
         right: 215px;
       }
+    @media (max-width: 600px){
+       right: 200px;
+       bottom: 230px;
+    }
     .bunTop {
         z-index: 22;
         margin-bottom: 12px;

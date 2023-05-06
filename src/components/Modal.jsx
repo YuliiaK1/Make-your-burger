@@ -21,7 +21,7 @@ function Modal(props) {
               <img src="./image/modal-phone.svg" alt="phone" />
               <div>
                 <label>Phone Number</label>
-                <input type="text" placeholder="(433) 577-1343"/>
+                <input type="number" placeholder="(433) 577-1343"/>
               </div>
             </div>
             <div className='block'>
