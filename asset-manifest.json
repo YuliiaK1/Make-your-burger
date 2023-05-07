@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Make-your-burger/static/css/main.c546d7b0.css",
-    "main.js": "/Make-your-burger/static/js/main.63be83b7.js",
+    "main.js": "/Make-your-burger/static/js/main.1f41df3c.js",
     "static/js/787.c8817252.chunk.js": "/Make-your-burger/static/js/787.c8817252.chunk.js",
     "static/media/main-img-burger.png": "/Make-your-burger/static/media/main-img-burger.88d9d94c5a820772e5e8.png",
     "static/media/bun-topHuge.png": "/Make-your-burger/static/media/bun-topHuge.454f48e143ac327ac68e.png",
@@ -25,11 +25,11 @@
     "static/media/kcal-icon.svg": "/Make-your-burger/static/media/kcal-icon.9fe42d06ed1bbba7e69149a21099bc7d.svg",
     "static/media/time-icon.svg": "/Make-your-burger/static/media/time-icon.fddaa64bb4aa892907c67c88d82cfd95.svg",
     "main.c546d7b0.css.map": "/Make-your-burger/static/css/main.c546d7b0.css.map",
-    "main.63be83b7.js.map": "/Make-your-burger/static/js/main.63be83b7.js.map",
+    "main.1f41df3c.js.map": "/Make-your-burger/static/js/main.1f41df3c.js.map",
     "787.c8817252.chunk.js.map": "/Make-your-burger/static/js/787.c8817252.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c546d7b0.css",
-    "static/js/main.63be83b7.js"
+    "static/js/main.1f41df3c.js"
   ]
 }
