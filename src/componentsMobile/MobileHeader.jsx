@@ -29,7 +29,7 @@ function MobileHeader() {
         </button>
         {clicked && <div className="burger-menu">
          <nav onClick={()=>setClicked(!clicked)}>
-            {isMainPage? <NavLink to="/constructor" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >Make your burger</li></NavLink> : <NavLink to="/" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >Discover</li></NavLink> }
+            {isMainPage? <NavLink to="/constructor" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >Make your burger</li></NavLink> : <NavLink to="/Make-your-burger" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >Discover</li></NavLink> }
             <NavLink to="/Make-your-burger" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >Account</li></NavLink>
             <NavLink to="/Make-your-burger" style={{textDecoration: 'none', animationDelay: "0.2s" }}><li >8 800 437-87-22</li></NavLink>
          </nav>
