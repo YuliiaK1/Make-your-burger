@@ -18,7 +18,7 @@ function Header() {
           <div className="header-left">
           <img width={57} height={57} src={logo} alt="header-logo" />
            <ul>
-            <NavLink to="/" style={{ textDecoration: 'none' }}><li >Discover</li></NavLink>
+            <NavLink to="/Make-your-burger" style={{ textDecoration: 'none' }}><li >Discover</li></NavLink>
             <NavLink to="/constructor" style={{ textDecoration: 'none' }}><li>Make your burger</li></NavLink>
            </ul>
           </div>

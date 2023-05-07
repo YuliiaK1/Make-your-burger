@@ -23,7 +23,7 @@ function App() {
       {isMobile ? <MobileHeader/> : <Header/>}
       {cartOpened && <Modal onClickCart={()=>setCartOpened(false)}/>}
         <Routes>
-          <Route path="/" element={<Main/>}/>
+          <Route path="/Make-your-burger" element={<Main/>}/>
           <Route path="/constructor" element={<ScreenTwo onClickCart={()=>setCartOpened(true)}/>}/>
           <Route path="*" element={<h3>404</h3>} />
         </Routes>
