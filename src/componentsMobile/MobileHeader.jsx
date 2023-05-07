@@ -10,7 +10,7 @@ function MobileHeader() {
   const {callbackOn, setCallbackOn} = useContext(Context);
   const [clicked, setClicked] = React.useState(false);
   const location = useLocation();
-  const isMainPage = location.pathname === '/';
+  const isMainPage = location.pathname === '/Make-your-burger';
 
   function callBackOn() {
     setCallbackOn(current => !current);
