@@ -1,15 +1,35 @@
 {
   "files": {
-    "main.css": "/Make-your-burger/static/css/main.06fabf52.css",
-    "main.js": "/Make-your-burger/static/js/main.33a86be2.js",
+    "main.css": "/Make-your-burger/static/css/main.c546d7b0.css",
+    "main.js": "/Make-your-burger/static/js/main.63be83b7.js",
     "static/js/787.c8817252.chunk.js": "/Make-your-burger/static/js/787.c8817252.chunk.js",
+    "static/media/main-img-burger.png": "/Make-your-burger/static/media/main-img-burger.88d9d94c5a820772e5e8.png",
+    "static/media/bun-topHuge.png": "/Make-your-burger/static/media/bun-topHuge.454f48e143ac327ac68e.png",
+    "static/media/bunHuge.png": "/Make-your-burger/static/media/bunHuge.c00fe34a11497baeaed1.png",
+    "static/media/cutletHuge.png": "/Make-your-burger/static/media/cutletHuge.8a9a6a2811930bbef285.png",
+    "static/media/saladHuge.png": "/Make-your-burger/static/media/saladHuge.fb3b11bb0da160c303bf.png",
+    "static/media/mayoHuge.png": "/Make-your-burger/static/media/mayoHuge.2668d582696b720095a0.png",
+    "static/media/sauce.png": "/Make-your-burger/static/media/sauce.d538964d29a8d00234bc.png",
+    "static/media/tomatoHuge.png": "/Make-your-burger/static/media/tomatoHuge.07f3ccea3ec25bf64a9a.png",
+    "static/media/cucumberHuge.png": "/Make-your-burger/static/media/cucumberHuge.6b63847ccdfe8d44616f.png",
+    "static/media/onionHuge.png": "/Make-your-burger/static/media/onionHuge.b1cf4779bdb858550d5a.png",
+    "static/media/bg-burger.png": "/Make-your-burger/static/media/bg-burger.7fbed69ecd5437b77b75.png",
+    "static/media/modal-smile.svg": "/Make-your-burger/static/media/modal-smile.74a1179ea76a959014bf69664fdc2b75.svg",
+    "static/media/modal-map.svg": "/Make-your-burger/static/media/modal-map.151ee637b177e66f344a3872ab8d6dad.svg",
+    "static/media/modal-phone.svg": "/Make-your-burger/static/media/modal-phone.b70f651c0369a94752b113cc466b6a21.svg",
+    "static/media/phone.svg": "/Make-your-burger/static/media/phone.c8f8495e30d32ace7e9825b4aa9cbaa3.svg",
+    "static/media/phoneOn.svg": "/Make-your-burger/static/media/phoneOn.d7aa8f0268f5d7c6c36ca550d7f7079a.svg",
+    "static/media/gr-icon.svg": "/Make-your-burger/static/media/gr-icon.a5e0e1b84b56b0dbd688c22fbbf4100b.svg",
     "index.html": "/Make-your-burger/index.html",
-    "main.06fabf52.css.map": "/Make-your-burger/static/css/main.06fabf52.css.map",
-    "main.33a86be2.js.map": "/Make-your-burger/static/js/main.33a86be2.js.map",
+    "static/media/modal-checkout.svg": "/Make-your-burger/static/media/modal-checkout.e2ad0953385e1239f72841f831fac97f.svg",
+    "static/media/kcal-icon.svg": "/Make-your-burger/static/media/kcal-icon.9fe42d06ed1bbba7e69149a21099bc7d.svg",
+    "static/media/time-icon.svg": "/Make-your-burger/static/media/time-icon.fddaa64bb4aa892907c67c88d82cfd95.svg",
+    "main.c546d7b0.css.map": "/Make-your-burger/static/css/main.c546d7b0.css.map",
+    "main.63be83b7.js.map": "/Make-your-burger/static/js/main.63be83b7.js.map",
     "787.c8817252.chunk.js.map": "/Make-your-burger/static/js/787.c8817252.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06fabf52.css",
-    "static/js/main.33a86be2.js"
+    "static/css/main.c546d7b0.css",
+    "static/js/main.63be83b7.js"
   ]
 }
