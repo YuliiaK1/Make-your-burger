@@ -53,8 +53,8 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 425px){
+@media (max-width: 600px){
   .wrapper {
-    margin: 0 24px;
+    margin: 20px 24px;
   }
 }
