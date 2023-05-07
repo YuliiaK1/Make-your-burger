@@ -1,31 +1,36 @@
 import React from 'react';
-import './Modal.scss'
+import './Modal.scss';
+import title from "../assets/image/modal-checkout.svg";
+import smile from "../assets/image/modal-smile.svg";
+import phone from "../assets/image/modal-phone.svg";
+import map from "../assets/image/modal-map.svg";
+
 
 function Modal(props) {
     return (
       <div className="modal-wrap">
         <div className='modal-item'>
           <div className='title'>
-            <img src="./image/modal-checkout.svg" alt="checkout" />
+            <img src={title} alt="checkout" />
             <h2>Checkout</h2>
           </div>
           <div className='inputs'>
             <div className='block'>
-              <img src="./image/modal-smile.svg" alt="smile" />
+              <img src={smile} alt="smile" />
               <div>
                 <label>Your Name</label>
                 <input type="text" placeholder="Jerome Porter"/>
               </div>
             </div>
             <div className='block'>
-              <img src="./image/modal-phone.svg" alt="phone" />
+              <img src={phone} alt="phone" />
               <div>
                 <label>Phone Number</label>
                 <input type="number" placeholder="(433) 577-1343"/>
               </div>
             </div>
             <div className='block'>
-              <img src="./image/modal-map.svg" alt="map" />
+              <img src={map} alt="map" />
               <div>
                 <label>Shipping Addres</label>
                 <input type="text" placeholder="1038 Cinder Berry Turnabout"/>

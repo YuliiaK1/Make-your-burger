@@ -30,9 +30,9 @@
   .right-footer {
     ul {
       display: flex;
+      gap: 8px;
       list-style: none;
       li {
-        margin-left: 8px;
         cursor: pointer;
       }
     }

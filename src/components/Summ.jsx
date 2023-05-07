@@ -2,6 +2,11 @@ import React, {useContext} from 'react';
 import Context from './Context';
 import './Summ.scss'
 import Price from './Price';
+import sauce from '../assets/image/sauce.png';
+import smile from '../assets/image/mini-smile.png';
+import time from '../assets/image/time-icon.svg';
+import grIcon from '../assets/image/gr-icon.svg';
+import kcal from '../assets/image/kcal-icon.svg';
 
 function Summ(props) {
   const{isMobile} = useContext(Context);
@@ -10,12 +15,12 @@ function Summ(props) {
   
   const addSauce = (obj) => {
     if(obj>=20) {
-      return <div className='sauce'><img src="../image/sauce.png" alt="sauce" /> <p>+Tomato Ketchup <span>2 gr</span></p></div>
+      return <div className='sauce'><img src={sauce} alt="sauce" /> <p>+Tomato Ketchup <span>2 gr</span></p></div>
     }
   }
   const limitBurger = (obj) => {
     if(obj>=35) {
-      return <div className='limit'><img src="../image/mini-smile.png" alt="mini-smile" /><p>You are sure?</p></div>
+      return <div className='limit'><img src={smile} alt="mini-smile" /><p>You are sure?</p></div>
     }
   }
 
@@ -28,15 +33,15 @@ function Summ(props) {
         
         <div className="time">
           <div>
-            <img src="./image/Summary icons.svg" alt="" />
+            <img src={time} alt="" />
             <span>7 min</span>
           </div>
           <div>
-            <img src="./image/Summary icons2.svg" alt="" />
+            <img src={grIcon} alt="" />
             <span>{value.gramItem}gr</span>
           </div>
           <div>
-            <img src="./image/Summary icons3.svg" alt="" />
+            <img src={kcal} alt="" />
             <span>{value.kcalItem}kcal</span>
           </div>
         </div>

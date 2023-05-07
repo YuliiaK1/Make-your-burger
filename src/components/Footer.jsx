@@ -1,4 +1,5 @@
 import './Footer.scss';
+import { imageFooter } from '../assets/image/imageFooter';
 function Footer() {
     return (
       <div className="footer">
@@ -10,13 +11,9 @@ function Footer() {
         </div>
         <div className="right-footer">
             <ul>
-                <li><img src="./image/payment-logos-1.png" alt="visa" /></li>
-                <li><img src="./image/payment-logos-2.png" alt="masterCard" /></li>
-                <li><img src="./image/payment-logos-3.png" alt="googlePay" /></li>
-                <li><img src="./image/payment-logos-4.png" alt="applePay" /></li>
-                <li><img src="./image/payment-logos-5.png" alt="payPas" /></li>
-                <li><img src="./image/payment-logos.png" alt="bitcoin" /></li>
-                <li><img src="./image/Etherium.png" alt="processor" /></li>
+              {imageFooter.map((obj)=>(
+                <li key={obj.id}><img src={obj.image} alt={obj.alt}/></li> 
+              ))}
             </ul>
         </div>
       </div>

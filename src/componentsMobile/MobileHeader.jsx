@@ -2,6 +2,10 @@ import React, {useContext} from 'react';
 import Context from '../components/Context';
 import { NavLink, useLocation } from 'react-router-dom';
 import './MobileHeader.scss';
+import logo from "../assets/image/header-logo.png"
+import phoneRed from "../assets/image/phone.svg"
+import phoneGreen from "../assets/image/phoneOn.svg"
+
 function MobileHeader() {
   const {callbackOn, setCallbackOn} = useContext(Context);
   const [clicked, setClicked] = React.useState(false);
@@ -13,10 +17,10 @@ function MobileHeader() {
   }
     return (
       <div className="mobile">
-        <img width={48} height={48} src="./image/header-logo.png" alt="header-logo" />
+        <img width={48} height={48} src={logo} alt="header-logo" />
           <ul>
             <li style={{backgroundColor: callbackOn ? '#efffed' : '#FFEDED'}}>
-                  <img src={callbackOn ? "./image/phoneOn.svg" : "./image/phone.svg"} alt="phone" />
+                  <img src={callbackOn ? phoneGreen : phoneRed} alt="phone" />
                   <span style={{color: callbackOn ? '#31af0e' : '#FF4D4F'}} onClick={callBackOn}>Call Me Back</span>
             </li>
           </ul>

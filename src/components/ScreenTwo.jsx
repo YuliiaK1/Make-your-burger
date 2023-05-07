@@ -6,6 +6,7 @@ import ShowIngredients from './ShowIngredients';
 import Summ from './Summ';
 import Burger from './Burger';
 import Price from './Price';
+import bgBurger from "../assets/image/bg-burger.png"
 import { useMediaQuery } from 'react-responsive'
 
 function ScreenTwo(props) {
@@ -15,7 +16,7 @@ function ScreenTwo(props) {
       <div>
         <div className='constructor'>
           <div className="screen-two">
-            <img width={480} height={380} src="./image/bg-burger.png" alt="bc-burger" />
+            <img width={480} height={380} src={bgBurger} alt="bc-burger" />
             <Burger/> 
           </div>
           <Summ openCart={props.onClickCart}/>
